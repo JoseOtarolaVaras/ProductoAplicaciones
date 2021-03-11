@@ -13,6 +13,10 @@ use Illuminate\Support\Facades\Broadcast;
 |
 */
 
+<<<<<<< HEAD
 Broadcast::channel('App.Models.User.{id}', function ($user, $id) {
+=======
+Broadcast::channel('App.User.{id}', function ($user, $id) {
+>>>>>>> 33e86e7 (first commit)
     return (int) $user->id === (int) $id;
 });

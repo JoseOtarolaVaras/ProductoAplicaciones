@@ -44,13 +44,21 @@ return [
         'single' => [
             'driver' => 'single',
             'path' => storage_path('logs/laravel.log'),
+<<<<<<< HEAD
             'level' => env('LOG_LEVEL', 'debug'),
+=======
+            'level' => 'debug',
+>>>>>>> 33e86e7 (first commit)
         ],
 
         'daily' => [
             'driver' => 'daily',
             'path' => storage_path('logs/laravel.log'),
+<<<<<<< HEAD
             'level' => env('LOG_LEVEL', 'debug'),
+=======
+            'level' => 'debug',
+>>>>>>> 33e86e7 (first commit)
             'days' => 14,
         ],
 
@@ -59,12 +67,20 @@ return [
             'url' => env('LOG_SLACK_WEBHOOK_URL'),
             'username' => 'Laravel Log',
             'emoji' => ':boom:',
+<<<<<<< HEAD
             'level' => env('LOG_LEVEL', 'critical'),
+=======
+            'level' => 'critical',
+>>>>>>> 33e86e7 (first commit)
         ],
 
         'papertrail' => [
             'driver' => 'monolog',
+<<<<<<< HEAD
             'level' => env('LOG_LEVEL', 'debug'),
+=======
+            'level' => 'debug',
+>>>>>>> 33e86e7 (first commit)
             'handler' => SyslogUdpHandler::class,
             'handler_with' => [
                 'host' => env('PAPERTRAIL_URL'),
@@ -83,12 +99,20 @@ return [
 
         'syslog' => [
             'driver' => 'syslog',
+<<<<<<< HEAD
             'level' => env('LOG_LEVEL', 'debug'),
+=======
+            'level' => 'debug',
+>>>>>>> 33e86e7 (first commit)
         ],
 
         'errorlog' => [
             'driver' => 'errorlog',
+<<<<<<< HEAD
             'level' => env('LOG_LEVEL', 'debug'),
+=======
+            'level' => 'debug',
+>>>>>>> 33e86e7 (first commit)
         ],
 
         'null' => [

@@ -15,7 +15,11 @@ return [
     |
     */
 
+<<<<<<< HEAD
     'paths' => ['api/*', 'sanctum/csrf-cookie'],
+=======
+    'paths' => ['api/*'],
+>>>>>>> 33e86e7 (first commit)
 
     'allowed_methods' => ['*'],
 
